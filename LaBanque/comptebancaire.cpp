@@ -37,7 +37,7 @@ void CompteBancaire::Deposer(const float _montant)
  */
 bool CompteBancaire::Retirer(const float _montant)
 {
-    int possible=false;
+    bool possible=false;
     if(_montant>solde){
         return possible;
     }
@@ -45,6 +45,7 @@ bool CompteBancaire::Retirer(const float _montant)
         possible=true;
         solde-=_montant;
     }
+    return possible;
 }
 
 /**
