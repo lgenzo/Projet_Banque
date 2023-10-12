@@ -12,6 +12,7 @@
 class CompteBancaire
 {
 protected:
+    /**solde du compte*/
     float solde;
 public:
     CompteBancaire(const float _solde = 0);
