@@ -1,4 +1,6 @@
 #include <iostream>
+#include "compteclient.h"
+#include "compteepargne.h"
 #include "menu.h"
 #include "comptebancaire.h"
 
@@ -7,49 +9,38 @@ using namespace std;
 
 enum CHOIX_PRINCIPAL
 {
- CONSULTER = 1,
- DEPOT = 2,
- RETRAIT = 3,
- QUITTER = 4
+ OUVRIR_EPARGNE = 1,
+ GERER_BANCAIRE,
+ GERER_EPARGNE ,
+ QUITTER
 };
 
 int main()
 {
-    CompteBancaire monCompte(1000);
+    CompteClient monCompte("enzo",49);
     int choix;
-    float depot, retrait;
     try {
-        Menu principal("../LaBanque/compteBancaire.txt");
+        Menu principal("../LaBanque/client.txt");
         do
          {
              choix = principal.Afficher();
              switch (choix)
              {
-             case CONSULTER:
-                 cout << "Vous avez choisi CONSULTER" << endl;
-                 cout << "votre solde est de "<< monCompte.ConsulterSolde()<< endl;
+             case OUVRIR_EPARGNE:
+                 cout << "Vous avez choisi OUVRIR_EPARGNE" << endl;
+                 monCompte.OuvrirCompteEpargne();
                  Menu::AttendreAppuiTouche();
                  break;
 
-             case DEPOT:
-                 cout << "Vous avez choisi DEPOT" << endl;
-                 cout << "combien voulez vous déposez ?" << endl;
-                 cin >> depot;
-                 monCompte.Deposer(depot);
-                 cout << "votre nouveau solde est de "<<monCompte.ConsulterSolde()<<endl;
+             case GERER_BANCAIRE:
+                 cout << "Vous avez choisi GERER_BANCAIRE" << endl;
+                 monCompte.GererCompteBancaire();
                  Menu::AttendreAppuiTouche();
                  break;
 
-             case RETRAIT:
-                 cout << "Vous avez choisi RETRAIT" << endl;
-                 cout << "combien voulez vous retirer ?" << endl;
-                 cin >> retrait;
-                 if(monCompte.Retirer(retrait)==false){
-                     cout<<"solde insufisant"<<endl;
-                 }
-                 else{
-                     cout << "votre nouveau solde est de "<<monCompte.ConsulterSolde()<<endl;
-                 }
+             case GERER_EPARGNE:
+                 cout << "Vous avez choisi GERER_EPARGNE" << endl;
+                 monCompte.GererCompteEpargne();
                  Menu::AttendreAppuiTouche();
                  break;
              }

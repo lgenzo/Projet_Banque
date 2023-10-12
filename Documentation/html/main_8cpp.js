@@ -1,9 +1,9 @@
 var main_8cpp =
 [
     [ "CHOIX_PRINCIPAL", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84", [
-      [ "CONSULTER", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a02ff9e8c3b2ab876a37673502ed82b9a", null ],
-      [ "DEPOT", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84aa6456c6b827a3b83b63eb0f1fb274f38", null ],
-      [ "RETRAIT", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84afeb306730e604bb04909c732676f3a7a", null ],
+      [ "OUVRIR_EPARGNE", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a56c426c9ff49182933db05032015cbc5", null ],
+      [ "GERER_BANCAIRE", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a7e4a4115228626653eca3e1eb9b55a10", null ],
+      [ "GERER_EPARGNE", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84aa67055bea7efc4207ec1931e2ae711b2", null ],
       [ "QUITTER", "main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a8e639928892ca56805cccf6606dcff63", null ]
     ] ],
     [ "main", "main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ]

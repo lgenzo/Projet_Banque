@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main_56',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['menu_57',['Menu',['../class_menu.html#a2733b73d7c4dff4b1db19afd45f255b9',1,'Menu']]],
-  ['modifiertaux_58',['ModifierTaux',['../class_compte_epargne.html#af5eb63981453d83582970b310bf5ae02',1,'CompteEpargne']]]
+  ['gerercomptebancaire_85',['GererCompteBancaire',['../class_compte_client.html#a3a252070bf5446e50d42972613f957f1',1,'CompteClient']]],
+  ['gerercompteepargne_86',['GererCompteEpargne',['../class_compte_client.html#a3ffa09164747a99178c0ac3ad9e2f49d',1,'CompteClient']]]
 ];

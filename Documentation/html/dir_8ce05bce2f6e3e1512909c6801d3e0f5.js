@@ -4,6 +4,10 @@ var dir_8ce05bce2f6e3e1512909c6801d3e0f5 =
     [ "comptebancaire.h", "comptebancaire_8h.html", [
       [ "CompteBancaire", "class_compte_bancaire.html", "class_compte_bancaire" ]
     ] ],
+    [ "compteclient.cpp", "compteclient_8cpp.html", "compteclient_8cpp" ],
+    [ "compteclient.h", "compteclient_8h.html", [
+      [ "CompteClient", "class_compte_client.html", "class_compte_client" ]
+    ] ],
     [ "compteepargne.cpp", "compteepargne_8cpp.html", null ],
     [ "compteepargne.h", "compteepargne_8h.html", [
       [ "CompteEpargne", "class_compte_epargne.html", "class_compte_epargne" ]

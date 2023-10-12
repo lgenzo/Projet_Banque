@@ -8,7 +8,7 @@
 #include "comptebancaire.h"
 
 /**
-   @brief CompteBancaire::CompteBancaire
+   @brief CompteBancaire::CompteBancaire le constructeur de la classe CompteBancaire
    @details créer un compte bancaire avec un solde rattache
    @param _solde solde du compte
    @author Enzo Le Galiard

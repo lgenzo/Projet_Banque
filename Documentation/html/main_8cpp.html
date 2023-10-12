@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="compteclient_8h_source.html">compteclient.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compteepargne_8h_source.html">compteepargne.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="comptebancaire_8h_source.html">comptebancaire.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -98,23 +100,25 @@ Graphe des dépendances par inclusion de main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#_2home_2_u_s_e_r_s_2_e_l_e_v_e_s_2_s_n_i_r2022_2elegaliard_2_documents_2_projet___banque_2_la_banque_2main_8cpp" alt=""/></div>
 <map name="_2home_2_u_s_e_r_s_2_e_l_e_v_e_s_2_s_n_i_r2022_2elegaliard_2_documents_2_projet___banque_2_la_banque_2main_8cpp" id="_2home_2_u_s_e_r_s_2_e_l_e_v_e_s_2_s_n_i_r2022_2elegaliard_2_documents_2_projet___banque_2_la_banque_2main_8cpp">
-<area shape="rect" title=" " alt="" coords="82,5,265,76"/>
-<area shape="rect" title=" " alt="" coords="5,199,77,225"/>
-<area shape="rect" href="menu_8h.html" title="implémentation de la classe Menu" alt="" coords="141,124,206,151"/>
-<area shape="rect" href="comptebancaire_8h.html" title="Déclaration de la classe CompteBancaire." alt="" coords="231,124,356,151"/>
-<area shape="rect" title=" " alt="" coords="102,199,157,225"/>
-<area shape="rect" title=" " alt="" coords="181,199,256,225"/>
-<area shape="rect" title=" " alt="" coords="280,199,347,225"/>
-<area shape="rect" title=" " alt="" coords="371,199,437,225"/>
+<area shape="rect" title=" " alt="" coords="90,5,272,76"/>
+<area shape="rect" title=" " alt="" coords="298,199,370,225"/>
+<area shape="rect" href="compteclient_8h.html" title=" " alt="" coords="128,124,234,151"/>
+<area shape="rect" href="comptebancaire_8h.html" title="Déclaration de la classe CompteBancaire." alt="" coords="20,273,145,300"/>
+<area shape="rect" href="compteepargne_8h.html" title=" " alt="" coords="21,199,144,225"/>
+<area shape="rect" href="menu_8h.html" title="implémentation de la classe Menu" alt="" coords="370,124,435,151"/>
+<area shape="rect" title=" " alt="" coords="219,199,274,225"/>
+<area shape="rect" title=" " alt="" coords="394,199,469,225"/>
+<area shape="rect" title=" " alt="" coords="493,199,560,225"/>
+<area shape="rect" title=" " alt="" coords="584,199,650,225"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Énumérations</h2></td></tr>
-<tr class="memitem:a5c6c287ab8c09a50d530a75fbacd9c84"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84">CHOIX_PRINCIPAL</a> { <a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a02ff9e8c3b2ab876a37673502ed82b9a">CONSULTER</a> = 1, 
-<a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84aa6456c6b827a3b83b63eb0f1fb274f38">DEPOT</a> = 2, 
-<a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84afeb306730e604bb04909c732676f3a7a">RETRAIT</a> = 3, 
-<a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a8e639928892ca56805cccf6606dcff63">QUITTER</a> = 4
+<tr class="memitem:a5c6c287ab8c09a50d530a75fbacd9c84"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84">CHOIX_PRINCIPAL</a> { <a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a56c426c9ff49182933db05032015cbc5">OUVRIR_EPARGNE</a> = 1, 
+<a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a7e4a4115228626653eca3e1eb9b55a10">GERER_BANCAIRE</a>, 
+<a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84aa67055bea7efc4207ec1931e2ae711b2">GERER_EPARGNE</a>, 
+<a class="el" href="main_8cpp.html#a5c6c287ab8c09a50d530a75fbacd9c84a8e639928892ca56805cccf6606dcff63">QUITTER</a>
  }</td></tr>
 <tr class="separator:a5c6c287ab8c09a50d530a75fbacd9c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -136,9 +140,9 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84a02ff9e8c3b2ab876a37673502ed82b9a"></a>CONSULTER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84aa6456c6b827a3b83b63eb0f1fb274f38"></a>DEPOT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84afeb306730e604bb04909c732676f3a7a"></a>RETRAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84a56c426c9ff49182933db05032015cbc5"></a>OUVRIR_EPARGNE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84a7e4a4115228626653eca3e1eb9b55a10"></a>GERER_BANCAIRE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84aa67055bea7efc4207ec1931e2ae711b2"></a>GERER_EPARGNE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5c6c287ab8c09a50d530a75fbacd9c84a8e639928892ca56805cccf6606dcff63"></a>QUITTER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 

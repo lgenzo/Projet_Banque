@@ -8,7 +8,7 @@
 #include "compteepargne.h"
 
 /**
- * @brief CompteEpargne::CompteEpargne
+ * @brief CompteEpargne::CompteEpargne le constructeur de a classe CompteEpargne
  * @details créer un compte Epargne avec un solde et un taux d'interêts rattaché
  * @param _solde est le solde du compte epargne
  * @param _tauxInterets est le taux applicqué au solde du compte epargne
@@ -27,7 +27,7 @@ CompteEpargne::CompteEpargne(const float _solde, const float _tauxInterets):
 float CompteEpargne::CalculerInterets()
 {
     float nouveauSolde;
-    return nouveauSolde=solde+(solde*tauxInterets/1000);
+    return nouveauSolde=solde+(solde*tauxInterets/100);
 }
 
 /**
